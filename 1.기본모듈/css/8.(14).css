@@ -1,0 +1,77 @@
+.cart-background {
+  width: 100%;
+  background-color: #c2d3de;
+  padding: 30px;
+}
+
+.cart-table {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+td,
+th {
+  border: 1px solid black;
+}
+
+.cart-table td,
+.cart-table th {
+  padding: 15px;
+  border: 1px solid #c2d3de;
+}
+
+.cell-long {
+  width: 700px;
+}
+/* 테이블 안의 모든 세번째 요소 */
+.cart-table th:nth-child(3) {
+  width: 400px;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+}
+
+/*** hover */
+/* pesudo-class라는 문법 */
+/* 마우스 올리면 : hover */
+.btn:hover {
+  background-color: green;
+}
+/* 마우스 클릭하면(클릭 중) */
+.btn:active {
+  background-color: yellow;
+}
+/* 클릭 후 계속 지속되는 상태 */
+.btn:focus {
+  background-color: blue;
+  border: 2px solid black;
+}
+
+.input-test {
+  font-size: 20px;
+}
+
+.input-test:foucs {
+  border-bottom: 2px solid red;
+}
+
+.custom-link {
+  /* 링크 밑줄 제거 */
+  text-decoration: none;
+}
+.custom-link:link {
+  color: violet;
+}
+.custom-link:visited {
+  color: black;
+}

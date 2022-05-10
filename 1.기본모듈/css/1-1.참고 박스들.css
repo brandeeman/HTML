@@ -1,0 +1,22 @@
+.explain-box {
+  width: 80%;
+  /* 최대폭 지정하는 법 */
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -40px;
+}
+
+/* 버튼 */
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+/* 뼈대 */
+.main-btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 살점 */
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+/* ----------------------- */
+
+/* Utility class : 만들어두면 편 - 극단 */
+.f-small {
+  font-size: 12px;
+}
+
+.f-mid {
+  font-size: 16px;
+}
+
+.f-lg {
+  font-size: 20px;
+}

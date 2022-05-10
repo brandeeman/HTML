@@ -1,0 +1,218 @@
+/*** 여는 법 : ctrl + e */
+
+/*** 전체 이상한 여백 없애기 */
+/* <body sytle="margin: 0px"> */
+/* body{ margin: 0px} */
+
+/*** box-sizing: border-box : 실제 보이는 모든 영역을 width로 지정하라. */
+/* 기본 : box-sizing: content-box */
+/* div{
+  box-sizing: boder-box;
+} */
+
+/*** 브라우저마다 디자인이 다르게 보일 때 해결 법 */
+/* 호환성 태그 하나 만들어 놓기 : <link href=""" /> */
+/* 구글 검색 법 : normalize.css */
+/* 링크 : https://github.com/necolas/normalize.css/blob/master/normalize.css  */
+
+/*** 참고 : 부모가 없으면 body가 부모가 됨 */
+/*** 참고 : % - 가변적 크기, 부모 요소에 비례해서,  */
+
+/* -------------------------------------------------------------------------- */
+
+/***
+*font 관련 내용
+font-size: 16px;
+font-family: gulim;
+color: red; 
+text-align: center; //글자 가운데 정렬
+letter-spacing: 5px //자간 조정 하는 법
+
+*글자 굵기
+font-weight: 100;
+*/
+
+/*** 폰트 상하 정렬
+.blog-content{
+  vertical-align: bottom;
+  위 첨자 : supper;
+  아래 첨자 : sub;
+}
+*/
+
+/*** background */
+/* .main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/shoes.jpg);
+  배경 박스 꽉 채우기
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  인스타그램 필터 같은 느낌
+  filter: brightness(70%) saturate(200%);
+
+} */
+
+/*** 이미지 가운데 정렬 하는 법 */
+/* .가운데 정렬 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+} */
+/* or margin : auto */
+
+/*** 박스 디자인 */
+/* .box {
+  참고 : 반응형 레이아웃 지정하는 법
+  width: 80%;
+  최대폭 지정하는 법 
+  max-width: 600px;
+
+    width는 컨텐츠 영역만을 말한다.(margin x, border x)
+    width: 200px;
+    background-color: cadeblue;
+    margin: 10px;
+    padding: 30px;
+    border: 4px solid black;
+    border-radius: 5px;
+
+    /* 그림자 주는 법 */
+/* box-shadow: 5px 5px black; */
+/* } */
+
+/*** display에 관하여
+  display : block :(기본) 한 행을 다 차지 하게 해주세요.
+inline-block : 크기만큼 차지 */
+
+/*** float:left 옆에 붙이는 법 : float : 붕떠서 공중에 떠있다. -> 해결법 :clear:left */
+
+/*** @media에 관하여 */
+/* 출처 : https://log.designichthus.com/11 */
+/* 사용법 : @media(조건문){실행코드} */
+/* 가로 해상도가 1200px 보다 큰 화면에 적용 */
+/* @media (min-width: 1200px) {
+  .container {
+    /* width: 1170px; */
+/* } */
+/* } */
+
+/* 가로 해상도가 992px 보다 작은 화면에 적용 */
+/* @media (max-width: 992px) {
+    .container {
+      display: block;
+    }
+  } */
+
+/*** 자식 태그 표현법 */
+/* 공백 : ~안에 있는
+   부모 요소 : 안에 있는 모든 태그 다 포함 : 자식의 자식도 다 포함 */
+/* .navbar li {
+  display: inline-block;
+} */
+/* 바로 밑에 있는 자식 : 직계 자식들만 포함*/
+/* .navbar>li {
+  display: inline-block;
+} */
+
+/*** 모든 a 태그는 밑줄이 붙는 데 없애는 법 : text-decoration: none*/
+/* .navbar a {
+  text-decoration: none;
+} */
+
+/*** button 기본 레이아웃 구성 */
+/* .btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+} */
+
+/*** 위치 잡기 : position */
+/* position 속성 : 공중에 붕 뜬다. */
+/* position : relative :(기준점): 내 원래 위치를 기준으로 삼아주세요. */
+/* 마이너스 표시도 가능 */
+/* 위치에서 좌표 이동 */
+/* position: relative;
+  top: 100px;
+  left: 100px; */
+/* bottom: 10px; */
+
+/* position 속성들 */
+/* position: static; 좌표 이동을 하지 말아주세요. */
+/* position: fixed; 화면에 고정. 현재 view포트 기준점 */
+/* position: absolute; 나의 부모 태그 중 position: relative를 가지고 있는 것이 기준점 */
+
+/* position: absolute(다른 postion들도 마찬가지) 가운데 정렬 주는 법 */
+/* position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px; */
+
+/* -------------------------------------------------------- */
+
+/*** 참고 */
+/* 높이 알려줌 : z-index:; */
+
+/*** input : type이 text인 문법만 선택 */
+/* input[type=text]{
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+} */
+
+/*** collapse 때문에 border radious가 안 먹는 경우  */
+/*방법1 table {
+  border-collapse : collapse;
+  border-spacing : 0;
+}
+
+(왼쪽위에있는 td) {
+  border-top-left-radius : 5px;
+} */
+/* 방법2 table {
+  border-collapse : collapse;
+  border-radius : 7px;
+  border-style : hidden;
+  box-shadow : 0 0 0 1px #666;
+} */
+
+/* ------------------------------------ */
+
+/*** hover */
+/* pesudo-class라는 문법 */
+/* 마우스 올리면 : hover */
+/* .btn:hover {
+  background-color: green;
+}
+마우스 클릭하면(클릭 중)
+.btn:active {
+  background-color: yellow;
+}
+클릭 후 계속 지속되는 상태
+.btn:focus {
+  background-color: blue;
+  border: 2px solid black;
+}
+.input-test {
+  font-size: 20px;
+}
+.input-test:foucs {
+  border-bottom: 2px solid red;
+}
+
+.custom-link {
+  링크 밑줄 제거
+  text-decoration: none;
+}
+.custom-link:link {
+  color: violet;
+}
+.custom-link:visited {
+  color: black;
+} */

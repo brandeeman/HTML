@@ -1,0 +1,49 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content {
+  width: 80%;
+  height: 200px;
+  background-color: #eee;
+  float: left;
+}
+
+.blog-img {
+  width: 20%;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+}
+
+.blog-profile {
+  width: 50px;
+  float: left;
+}
+
+.blog-name {
+  float: left;
+}
+
+/* 공백 : ~안에 있는
+   부모 요소 : 안에 있는 모든 태그 다 포함 : 자식의 자식도 다 포함 */
+.navbar li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* 바로 밑에 있는 자식 : 직계 자식들만 포함*/
+/* .navbar>li {
+  display: inline-block;
+} */
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+}
